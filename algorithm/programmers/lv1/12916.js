@@ -20,8 +20,8 @@ Pyy	false
 'p'의 개수 1개, 'y'의 개수 2개로 다르므로 false를 return 합니다.
  */
 
-function solution(s){
+function solution(s) {
   const sArr = s.toLowerCase().split('')
-  return sArr.filter(val=>val==='y').length === sArr.filter(val=>val==='p').length;
+  return sArr.filter(val => val === 'y').length === sArr.filter(val => val === 'p').length;
   // or s.match(/p/ig).length == s.match(/y/ig).length;
 }
