@@ -1,0 +1,29 @@
+<div id="result"></div>
+<button id="btn">run</button>
+<script>
+  function sleep(delay) {
+    var start = new Date().getTime();
+    while (new Date().getTime() < start + delay);
+  }
+
+  document.querySelector('#btn').addEventListener('click', function () {
+    var worker = new Worker('./worker.js');
+    worker.addEventListener('message', function (e) {
+      var div = document.createElement('div');
+      div.textContent = e.data; // 0.1238917491
+      document.querySelector('#result').appendChild(div);
+      worker.terminate();
+    });
+    worker.postMessage('asdfasdfasdf!');
+  });
+
+  console.log(0);
+  setTimeout(() => {
+    console.log(2);
+    sleep(3000);
+    console.log(3);
+  }, 0);
+  sleep(3000);
+  console.log(1);
+
+</script>
