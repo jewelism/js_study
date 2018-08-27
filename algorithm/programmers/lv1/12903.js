@@ -13,9 +13,9 @@ qwer	we
 
 function solution(s) {
   var sArr = s.split('');
-  while(sArr.length>2){
-      sArr.pop();
-      sArr.shift();
+  while (sArr.length > 2) {
+    sArr.pop();
+    sArr.shift();
   }
   return sArr.join('');
 }

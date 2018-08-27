@@ -19,7 +19,6 @@ arr	answer
 입출력 예 #1,2
 문제의 예시와 같습니다.
  */
-function solution(arr)
-{
-    return arr.filter((val, i) => val != arr[i-1]);
+function solution(arr) {
+  return arr.filter((val, i) => val != arr[i - 1]);
 }

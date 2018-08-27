@@ -27,5 +27,5 @@ arr의 모든 원소는 1으로 나누어 떨어집니다. 원소를 오름차�
 
 function solution(arr, divisor) {
   var result = arr.filter(val => val % divisor === 0);
-  return result.length > 0 ? result.sort((v1,v2)=>v1-v2) : [-1];
+  return result.length > 0 ? result.sort((v1, v2) => v1 - v2) : [-1];
 }
