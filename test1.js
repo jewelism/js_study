@@ -1,37 +1,41 @@
-function somePromise() {
-  return new Promise(resolve => {
-    resolve('value');
-  });
+for(let i=0; i<128; i++){
+  console.log(String.fromCharCode(i));
 }
 
-// while (true) {
-//   somePromise()
-//     .then(console.log);
+// function somePromise() {
+//   return new Promise(resolve => {
+//     resolve('value');
+//   });
 // }
 
-function some(a) {
-  a.name = 'boseok';
-}
+// // while (true) {
+// //   somePromise()
+// //     .then(console.log);
+// // }
 
-const a = { name: '보석', age: 1 };
-some(a); //메모리의 주소값을 넘겼으므로
-console.log(a); //name이 boseok으로 바뀐다.
+// function some(a) {
+//   a.name = 'boseok';
+// }
 
-function s(a){
-  a = 1;
-  console.log('함수 실행됨');
-}
+// const a = { name: '보석', age: 1 };
+// some(a); //메모리의 주소값을 넘겼으므로
+// console.log(a); //name이 boseok으로 바뀐다.
 
-var b = 2;
-s(b); //메모리에 값이 할당되므로, 값을 넘겼을뿐
+// function s(a){
+//   a = 1;
+//   console.log('함수 실행됨');
+// }
 
-console.log(b);
+// var b = 2;
+// s(b); //메모리에 값이 할당되므로, 값을 넘겼을뿐
 
-console.log(typeof new Number(1));
+// console.log(b);
 
-console.log(new Number(1)===1);
+// console.log(typeof new Number(1));
 
-const one = new Number(1);
-const two = 2;
-const three = one + two;
-console.log(three, typeof three);
+// console.log(new Number(1)===1);
+
+// const one = new Number(1);
+// const two = 2;
+// const three = one + two;
+// console.log(three, typeof three);
